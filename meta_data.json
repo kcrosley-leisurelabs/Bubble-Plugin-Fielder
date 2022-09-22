@@ -1,0 +1,14 @@
+{
+    "categories": {
+        "0": "technical",
+        "1": "productivity",
+        "2": "data (things)"
+    },
+    "demo_page": "https://list-shifter-dev-test.bubbleapps.io/version-test/fielder?debug_mode=true",
+    "description": "Fielder returns the field names on a Thing as a list of texts. Each instance of Fielder can retrieve the field names for up to three different types of Things, with various options for how the strings should be formatted.",
+    "image": "//s3.amazonaws.com/appforest_uf/f1663790145122x151656668149928500/fielder.svg",
+    "license": "open_source",
+    "link": "https://forum.bubble.io/t/do-a-search-for-a-things-list-of-fields-introspection/225301/3?u=keith",
+    "name": "Fielder",
+    "plugin_instructions": "Drop Fielder on your page. Configure the types of Things for which you want to get the field names. The lists of texts representing the field names appear at Fielder's \"Field Names\" outputs."
+}

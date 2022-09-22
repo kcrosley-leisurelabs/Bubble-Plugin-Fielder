@@ -1,0 +1,211 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 40,
+        "width": 40
+    },
+    "display": "Fielder",
+    "events": {
+        "AAP": {
+            "caption": "Initialized/Updated",
+            "doc": "Sent when Fielder has fetched all requested fields and published them to its outputs.",
+            "name": "initialized"
+        }
+    },
+    "fields": {
+        "AAD": {
+            "caption": "FIELDER",
+            "editor": "Label",
+            "name": "FIELDER",
+            "rank": 0
+        },
+        "AAL": {
+            "caption": "Enter up to three Things with fields (simply provide a sample of the Thing in question). The field names of that Thing will appear at the \"Field Names List n\" outputs of Fielder. Additionally, a list describing each field's type is published as \"Type List n\".",
+            "editor": "Label",
+            "name": "fielder_info",
+            "rank": 1
+        },
+        "AAM": {
+            "caption": "Thing 1",
+            "doc": "Provide a sample Thing here and its field names will appear at Fielder's \"Field Names List 1\" output.",
+            "editor": "DynamicValue",
+            "name": "thing_1",
+            "optional": true,
+            "rank": 2,
+            "value": "_any_thing_bindable"
+        },
+        "AAN": {
+            "caption": "Thing 2",
+            "doc": "Provide a sample Thing here and its field names will appear at Fielder's \"Field Names List 2\" output.",
+            "editor": "DynamicValue",
+            "name": "thing_2",
+            "optional": true,
+            "rank": 3,
+            "value": "_any_thing_bindable"
+        },
+        "AAO": {
+            "caption": "Thing 3",
+            "doc": "Provide a sample Thing here and its field names will appear at Fielder's \"Field Names List 3\" output.",
+            "editor": "DynamicValue",
+            "name": "thing_3",
+            "optional": true,
+            "rank": 4,
+            "value": "_any_thing_bindable"
+        },
+        "AAR": {
+            "caption": "FIELD NAME PROCESSING OPTIONS",
+            "editor": "Label",
+            "name": "processing_info",
+            "rank": 8
+        },
+        "AAS": {
+            "caption": "By default, Fielder will return all field names in their native state as they come from the listProperties() method on Things. But you can modify that with the options below.",
+            "editor": "Label",
+            "name": "processing_info_3",
+            "rank": 9
+        },
+        "AAT": {
+            "caption": "Suppress System Fields",
+            "default_val": false,
+            "doc": "Set this option to \"yes\" to strip out the Bubble system fields that are shared by all Things. These are the fields 'Created By', 'Slug', 'Created Date', 'Modified Date', and '_id'.",
+            "editor": "DynamicValue",
+            "name": "no_system",
+            "optional": true,
+            "rank": 10,
+            "value": "boolean"
+        },
+        "AAU": {
+            "caption": "Convert to Title Case",
+            "default_val": true,
+            "doc": "Set this option to \"yes\" to remove underscores (replacing them with spaces) and converting the values to Title Case. If set to \"no\", underscores will be preserved and fields will have their Bubble-native case (which is lowercase for custom fields and Title Case for system fields except for \"_id\".",
+            "editor": "DynamicValue",
+            "name": "title_case",
+            "optional": true,
+            "rank": 12,
+            "value": "boolean"
+        },
+        "AAV": {
+            "caption": "Remove Type",
+            "default_val": true,
+            "doc": "Set this option to \"yes\" to remove the type values on custom fields (which are like '_text' or 'custom_some_custom_type'. If set to \"no\", type values will be preserved as part of the field name.",
+            "editor": "DynamicValue",
+            "name": "remove_type",
+            "optional": true,
+            "rank": 11,
+            "value": "boolean"
+        },
+        "AAb": {
+            "caption": "Thing 4",
+            "doc": "Provide a sample Thing here and its field names will appear at Fielder's \"Field Names List 4\" output.",
+            "editor": "DynamicValue",
+            "name": "thing_4",
+            "optional": true,
+            "rank": 5,
+            "value": "_any_thing_bindable"
+        },
+        "AAc": {
+            "caption": "Thing 5",
+            "doc": "Provide a sample Thing here and its field names will appear at Fielder's \"Field Names List 5\" output.",
+            "editor": "DynamicValue",
+            "name": "thing_5",
+            "optional": true,
+            "rank": 6,
+            "value": "_any_thing_bindable"
+        },
+        "AAd": {
+            "caption": "Thing 6",
+            "doc": "Provide a sample Thing here and its field names will appear at Fielder's \"Field Names List 6\" output.",
+            "editor": "DynamicValue",
+            "name": "thing_6",
+            "optional": true,
+            "rank": 7,
+            "value": "_any_thing_bindable"
+        },
+        "AAe": {
+            "caption": "EDITOR OPTIONS",
+            "editor": "Label",
+            "name": "editor_INFO",
+            "rank": 13
+        },
+        "AAf": {
+            "caption": "Editor Icon Color",
+            "default_val": "Classic Blue",
+            "doc": "Use to change the color of the Fielder icon in editor view. This is, of course, the most important feature.",
+            "editor": "Dropdown",
+            "name": "icolor",
+            "optional": true,
+            "options": "Classic Blue,Electric Green,Hot Pink,Enzo Red,Mustang Yellow,British Racing Green,Flame,Night Rider",
+            "rank": 14
+        }
+    },
+    "icon": "ion-android-hand",
+    "property_applications": {
+        "resizable": true
+    },
+    "states": {
+        "AAF": {
+            "caption": "Field Names List 1",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "field_names_list_1",
+            "value": "text"
+        },
+        "AAG": {
+            "caption": "Field Names List 2",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "field_names_list_2",
+            "value": "text"
+        },
+        "AAH": {
+            "caption": "Field Names List 3",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "field_names_list_3",
+            "value": "text"
+        },
+        "AAX": {
+            "caption": "Field Names List 4",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "field_names_list_4",
+            "value": "text"
+        },
+        "AAY": {
+            "caption": "Field Names List 5",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "field_names_list_5",
+            "value": "text"
+        },
+        "AAZ": {
+            "caption": "Field Names List 6",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "field_names_list_6",
+            "value": "text"
+        },
+        "AAa": {
+            "caption": "Initialized",
+            "doc": "Goes to yes when initialized.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "initialized",
+            "value": "boolean"
+        }
+    }
+}
