@@ -7,7 +7,7 @@ function(instance, context) {
         instance.data.doubles = [/_date_range(?!.*_date_range)/, /_number_range(?!.*_number_range)/, /_geographic_address(?!.*_geographic_address)/]
 
         instance.data.funcUpdate = function update(instance, props) {
-            instance.data.start = Date.now()
+            // instance.data.start = Date.now() // uncomment to check update speed (it's 0-1 ms)
             // move properties to instance
             instance.data.funcGetProps(instance, props)
 
@@ -20,7 +20,7 @@ function(instance, context) {
             instance.publishState('initialized', instance.data.initialized)
             instance.triggerEvent('initialized')
 
-            console.log('init time: ', Date.now() - instance.data.start)
+            // console.log('init time: ', Date.now() - instance.data.start) // uncomment to check update speed (it's 0-1 ms)
 
         }
 
