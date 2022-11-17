@@ -137,6 +137,15 @@
             "optional": true,
             "options": "Classic Blue,Electric Green,Hot Pink,Enzo Red,Mustang Yellow,British Racing Green,Flame,Night Rider",
             "rank": 14
+        },
+        "AAg": {
+            "caption": "Debug Mode",
+            "doc": "Set to yes to log some interesting information to the console, such as how long the plugin took to run, and what Bubble's internal representation of your field names are.",
+            "editor": "DynamicValue",
+            "name": "debug",
+            "optional": true,
+            "rank": 15,
+            "value": "boolean"
         }
     },
     "icon": "ion-android-hand",
