@@ -11,7 +11,7 @@ function(instance, context) {
             if (instance.data.debug) instance.data.start = Date.now()
             // move properties to instance
             instance.data.funcGetProps(instance, props)
-
+            console.log(instance.data.things)
             instance.data.fields = instance.data.things.map(thing => thing && thing.get && thing.listProperties && thing.listProperties())
             instance.data.debug && console.log('Before processing Bubble fields are as follows: ', JSON.stringify(instance.data.fields))
 

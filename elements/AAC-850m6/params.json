@@ -21,7 +21,7 @@
             "rank": 0
         },
         "AAL": {
-            "caption": "Enter up to three Things with fields (simply provide a sample of the Thing in question). The field names of that Thing will appear at the \"Field Names List n\" outputs of Fielder. Additionally, a list describing each field's type is published as \"Type List n\".",
+            "caption": "Enter up to six Things with fields (simply provide a sample of the Thing in question). The field names of that Thing will appear at the \"Field Names List n\" outputs of Fielder. Additionally, a list describing each field's type is published as \"Type List n\".",
             "editor": "Label",
             "name": "fielder_info",
             "rank": 1
